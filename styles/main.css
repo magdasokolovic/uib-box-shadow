@@ -22,30 +22,43 @@ h2 {
     font-size: 2.441rem;
 }
 
+h3 {
+    font-size: 1.953rem;
+}
+
 section {
     display: block;
 }
+
+/* Boxes with shadows */
 
 .box {
     width: 200px;
     height: 200px;
     background-color: hotpink;
-    box-shadow: 0 0 20px 0px #00000063;
+    box-shadow: 6px 6px 20px 0px #00000063;
     /* position on horizontal axis, then horizontal axis, blur, then color of the shadow */
 }
 
 .box-container {
     padding: 100px;
+    margin-bottom: 60px;
     /* background: gray; */
 }
 
 .box-container-grey{
     background-color: gray;
 }
+
 .box-inset {
-    box-shadow: inset 0 0 0 0 black;
+    box-shadow: inset 6px 6px 20px 0 black;
 }
 
 .box-multiple {
-    box-shadow: inset 0px 0px 20px 7px #00000063;
+    box-shadow: -5px -6px 20px 7px #17161663, 4px 11px 20px 7px #10070763;
+}
+
+.box-solid {
+    box-shadow: 9px 8px #004cff, 20px 17px black;
+    border-radius: 5px;
 }

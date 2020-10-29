@@ -13,6 +13,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.8rem;
 }
+/* https://type-scale.com/  */
 
 h1 {
     font-size: 3.052rem;
@@ -20,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 2.441rem;
+    margin-bottom: 1.6rem;
 }
 
 h3 {
@@ -30,17 +32,11 @@ section {
     display: block;
 }
 
-/* Boxes with shadows */
 
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: hotpink;
-    box-shadow: 6px 6px 20px 0px #00000063;
-    /* position on horizontal axis, then horizontal axis, blur, then color of the shadow */
-}
+/* Containers */
 
-.box-container {
+.box-container,
+.text-shadow-container {
     padding: 100px;
     margin-bottom: 60px;
     /* background: gray; */
@@ -49,6 +45,32 @@ section {
 .box-container-grey{
     background-color: gray;
 }
+
+.text-shadow-headline{
+    color: #3d3c3c;
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-shadow: 0px 3px 0 #ffffff, 4px 1px 0 #734c8e;
+    letter-spacing: 2px;
+}
+
+.text-shadow-headline-outline {
+    text-shadow: -1px 5px 1px #000000;
+    color: mistyrose;
+    font-size: 9rem;
+}
+
+/* Boxes with shadows */
+
+.box {
+    width: 200px;
+    height: 200px;
+    font-size: 32px;
+    background-color: hotpink;
+    box-shadow: 6px 6px 20px 0px #00000063;
+    /* position on horizontal axis, then horizontal axis, blur, then color of the shadow */
+}
+
 
 .box-inset {
     box-shadow: inset 6px 6px 20px 0 black;
